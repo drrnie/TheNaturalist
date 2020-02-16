@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: arvo;
+    src: url(../FONTS/Arvo-Bold.ttf);
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(../FONTS/Roboto-Light.ttf);
+}
+body{
+    height: 100%;
+}
+.heading{
+    background: linear-gradient(to right bottom, rgba(137, 212, 83, 0.568), rgba(93, 93, 93, 0.514)), url(../IMG/firewatch\ green.jpg);
+    background-size: contain;
+    background-repeat: inherit;
+    padding: 46px;
+    text-align: left;
+    color: #414141;
+}
+.heading h1{
+    font-family: arvo;
+    font-size: 65px;
+}
+
+.heading h4{
+    font-family: roboto;
+    font-size: 40px;
+}
+
+.navbar {
+    list-style-type: none;
+    text-align: right;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #5d5d5d;
+}
+  
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    float: right;   
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: roboto;
+    font-weight: bold;
+    
+}
+  
+.navbar a:hover {
+    background-color: #b2f77d;
+    color: #414141;
+}
+
+button{
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: #2d6349;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #2d6349;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+button:focus{
+    outline: none;
+
+}
+
+button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 255.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+}
+
+button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #c8e690;
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover{
+    background: linear-gradient(to right bottom, rgba(125, 240, 10, 0.973),rgba(30, 86, 49, 0.555));
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+button:hover::before{
+    transform: translate(150px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+button:hover::after{
+    transform: translate(150px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+#container{
+    min-height: 100%;
+}
+
+#main{
+    overflow: auto;
+}
+
+.headings h1{
+    font-family: arvo;
+    font-size: 60px;
+    text-align: center ;
+    color: #75bd4b;
+}
+
+.headings h2{
+    font-family: roboto;
+    font-size: 30px;
+    text-align: center;
+}
+
+#footer{
+    padding-top: 10px;
+  width: 100%;
+  margin-top: 100px;
+  background-color: #414141;
+  text-align: center;
+  font-family: roboto;
+  font-weight: bold;
+  color: antiquewhite;
+  line-height: 30px;
+}
+
+#footer h3{
+    padding-bottom: 20px;
+}
+
+#footer p{
+    line-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 10px;
+}
+.btn_contact{
+    position: absolute;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: antiquewhite;
+    width: 120px;
+    height: 35px;
+    border: 1px solid antiquewhite;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+#btn_contact:focus{
+    outline: none;
+
+}
+
+#btn_contact::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 255.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+}
+
+#btn_contact::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #c8e690;
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+#btn_contact:hover{
+    background: linear-gradient(to right bottom, rgba(125, 240, 10, 0.973),rgba(30, 86, 49, 0.555));
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+#btn_contact:hover::before{
+    transform: translate(150px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+#btn_contact:hover::after{
+    transform: translate(150px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+textarea {
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 3px solid #75bd4b;
+    box-shadow: 1px 1px 1px #999;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: roboto;
+    font-size: 20px;
+}
+
+textarea::placeholder{
+    font-style: italic;
+}
+
+form{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    font-size: 20px;
+    
+    
+}
+input{
+    height: 30px;
+    font-family: roboto;
+    font-size: 20px;
+    text-align: center;
+    border: solid 3px #75bd4b;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+button{
+    position: absolute;
+    margin-top: 50px;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: #2d6349;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #2d6349;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+button:focus{
+    outline: none;
+
+}
+
+button::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 255.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+}
+
+button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #c8e690;
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover{
+    background: linear-gradient(to right bottom, rgba(125, 240, 10, 0.973),rgba(30, 86, 49, 0.555));
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+button:hover::before{
+    transform: translate(150px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+button:hover::after{
+    transform: translate(150px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
